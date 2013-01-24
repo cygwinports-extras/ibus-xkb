@@ -1,0 +1,11 @@
+--- origsrc/ibus-xkb-1.4.99.20120525/ui/gtk3/Makefile.am	2012-05-24 23:19:04.000000000 -0500
++++ src/ibus-xkb-1.4.99.20120525/ui/gtk3/Makefile.am	2013-01-23 21:09:28.111778200 -0600
+@@ -127,7 +127,7 @@ AM_LDADD += \
+ 	$(NULL)
+ 
+ AM_VALAFLAGS += \
+-	--vapidir=$(top_srcdir)/ui/gtk3 \
++	--vapidir=$(abs_top_builddir)/ui/gtk3 \
+ 	--metadatadir=$(top_srcdir)/ui/gtk3 \
+ 	--pkg=glib-2.0 \
+ 	--pkg=gmodule-2.0 \
